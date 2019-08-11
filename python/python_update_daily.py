@@ -77,7 +77,7 @@ def write_article_to_file(article,content,path):
     </script>
 </head>
 <body>
-<header><p><a href="{site[app_link]}/">记录思考</a></p>
+<header><p><a href="{site[app_link]}/">{site[app_name]}</a></p>
 </header>
 <nav>
 	<ul>
@@ -182,7 +182,7 @@ site['last_modify_time'] = datetime.datetime.now(tz=cst_tz).strftime("%Y-%m-%d %
 site['since_setup'] = date_from(2019,1,24)
 site['to_domain'] = date_to(2028,6,8)
 site['to_space'] = date_to(2020,12,11)
-site['app_name'] = 'iDaily'
+site['app_name'] = 'iDaily阅读笔记'
 site['app_link'] = 'https://iDaily.binkery.com'
 
 root_path = '../content'
