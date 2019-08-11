@@ -26,7 +26,8 @@ def read_path_as_content(path):
         title = f.readline() #标题
         url = f.readline() #关键词
         f.readline() #链接
-        content = f.read()
+        content = '# ' + title[2:] + '\n'
+        content += f.read()
         content += '\n > 阅读原文《[{title}]({url})》'.format(title=title[2:],url=url[2:])
     return content
 
