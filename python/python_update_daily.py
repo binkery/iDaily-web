@@ -19,7 +19,8 @@ def read_path_as_content(path):
     if os.path.isdir(path):
         md_file = os.path.join(path,'index.md')
         if not os.path.exists(md_file):
-            return '# no title \n - no keyword \n - no datetime\n'
+	    basename = os.path.basename(path)
+            return '# {title} \n - {keyword} \n - {url}\n'.format(title=basename,url=site['app_link'],keyword=site['app_name'])
     else :
         md_file = path
     with open(md_file,'r',encoding='utf-8') as f:
@@ -121,10 +122,11 @@ def read_path_as_article(path):
     if os.path.isdir(path):
         md_file = os.path.join(path,'index.md')
         if not os.path.exists(md_file):
+	    title = os.path.basename(path)
             return {
-                'title':'notitle',
-                'keyword':'nokeyword',
-                'url':'nodatetime',
+                'title':title,
+                'keyword':site['app_name'],
+                'url':site['app_link'],
                 'link':path_to_link(path)
             }
     else:
