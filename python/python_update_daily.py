@@ -26,8 +26,8 @@ def read_path_as_content(path):
         md_file = path
     with open(md_file,'r',encoding='utf-8') as f:
         title = f.readline() #标题
-        url = f.readline() #关键词
-        f.readline() #链接
+        url = f.readline() #链接
+        f.readline() #关键词
         content = '# ' + title[2:] + '\n'
         content += f.read()
         content += '\n > 阅读原文《[{title}]({url})》'.format(title=title[2:],url=url[2:])
@@ -134,8 +134,8 @@ def read_path_as_article(path):
         md_file = path
     with open(md_file,'r',encoding='utf-8') as f:
         _title = f.readline().strip().lstrip('#')
-        _keyword = f.readline().strip().lstrip('-')
         _datetime = f.readline().strip().lstrip('-')
+        _keyword = f.readline().strip().lstrip('-')
     return {
         'title':_title,
         'keyword':_keyword,
