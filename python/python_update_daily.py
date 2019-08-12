@@ -20,7 +20,8 @@ def read_path_as_content(path):
         md_file = os.path.join(path,'index.md')
         if not os.path.exists(md_file):
             basename = os.path.basename(path)
-            return '# {title} \n - {keyword} \n - {url}\n'.format(title=basename,url=site['app_link'],keyword=site['app_name'])
+            #return '# {title} \n - {keyword} \n - {url}\n'.format(title=basename,url=site['app_link'],keyword=site['app_name'])
+            return '#{title}'.format(title=basename)
     else :
         md_file = path
     with open(md_file,'r',encoding='utf-8') as f:
@@ -185,7 +186,7 @@ site['since_setup'] = date_from(2019,1,24)
 site['to_domain'] = date_to(2028,6,8)
 site['to_space'] = date_to(2020,12,11)
 site['app_name'] = 'iDaily阅读笔记'
-site['app_link'] = 'https://iDaily.binkery.com'
+site['app_link'] = 'https://idaily.binkery.com'
 
 root_path = '../content'
 files = os.listdir(root_path)
