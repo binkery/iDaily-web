@@ -19,7 +19,7 @@ def read_path_as_content(path):
     if os.path.isdir(path):
         md_file = os.path.join(path,'index.md')
         if not os.path.exists(md_file):
-	    	basename = os.path.basename(path)
+	    basename = os.path.basename(path)
             return '# {title} \n - {keyword} \n - {url}\n'.format(title=basename,url=site['app_link'],keyword=site['app_name'])
     else :
         md_file = path
