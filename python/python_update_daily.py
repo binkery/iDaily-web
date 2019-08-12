@@ -97,11 +97,11 @@ def write_article_to_file(article,content,path):
 
 <footer>
      <p>
-        网站更新时间:{site[last_modify_time]}
-         网站已经运行<span class=""> {site[since_setup]} </span>天 ,
+         网站更新时间 ：{site[last_modify_time]}
+         网站已经运行 ：<span class=""> {site[since_setup]} </span>天 ,
          离域名到期 {site[to_domain]}天，
-         离空间到期 {site[to_space]} 天，</p>
-     <p>CopyRight &copy; <a href="{site[app_link]}/">SpacePage.Top</a></p>
+         离空间到期 {site[to_space]} 天</p>
+     <p>CopyRight &copy; <a href="{site[app_link]}/">iDaily.binkery.com</a></p>
 </footer>
 </body>
 </html>
@@ -182,7 +182,7 @@ def date_to(y,m,d):
 site = {}
 cst_tz = datetime.timezone(datetime.timedelta(hours=8))
 site['last_modify_time'] = datetime.datetime.now(tz=cst_tz).strftime("%Y-%m-%d %H:%M:%S")
-site['since_setup'] = date_from(2019,1,24)
+site['since_setup'] = date_from(2019,8,11)
 site['to_domain'] = date_to(2028,6,8)
 site['to_space'] = date_to(2020,12,11)
 site['app_name'] = 'iDaily阅读笔记'
