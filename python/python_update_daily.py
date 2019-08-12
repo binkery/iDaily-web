@@ -122,7 +122,7 @@ def read_path_as_article(path):
     if os.path.isdir(path):
         md_file = os.path.join(path,'index.md')
         if not os.path.exists(md_file):
-        title = os.path.basename(path)
+            title = os.path.basename(path)
             return {
                 'title':title,
                 'keyword':site['app_name'],
