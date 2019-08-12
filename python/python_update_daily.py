@@ -81,9 +81,9 @@ def write_article_to_file(article,content,path):
 <header><p><a href="{site[app_link]}/">{site[app_name]}</a></p>
 </header>
 <nav>
-	<ul>
+    <ul>
         {site[nav]}
-	</ul>
+    </ul>
 </nav>
 
 <div id="div_article">
@@ -122,7 +122,7 @@ def read_path_as_article(path):
     if os.path.isdir(path):
         md_file = os.path.join(path,'index.md')
         if not os.path.exists(md_file):
-	    title = os.path.basename(path)
+        title = os.path.basename(path)
             return {
                 'title':title,
                 'keyword':site['app_name'],
