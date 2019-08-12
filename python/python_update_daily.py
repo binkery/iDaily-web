@@ -72,8 +72,8 @@ def write_article_to_file(article,content,path):
     var _hmt = _hmt || [];
         (function() {{
           var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?1258cd282e3e864279d9edd53837183b";
-          var s = document.getElementsByTagName("script")[0]; 
+          hm.src = "https://hm.baidu.com/hm.js?4f07914fcb18c466355022a3db7f93f8";
+          var s = document.getElementsByTagName("script")[0];
           s.parentNode.insertBefore(hm, s);
         }})();
     </script>
