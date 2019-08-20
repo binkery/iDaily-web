@@ -63,8 +63,8 @@ def write_article_to_file(article,content,path):
     <meta name ="viewport" content ="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="theme-color" content="#337ab7">
-    <title>{article[title]} :: {site[app_name]}</title>
+    <meta name="theme-color" content="#404040">
+    <title>{article[title]} - {site[app_name]}</title>
     <meta name="keywords" content="{article[keyword]}">
     <meta name="description" content="{article[description]}">
     <link rel="stylesheet" href="{site[app_link]}/style.css">
