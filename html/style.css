@@ -25,7 +25,7 @@ header p{text-align:center;}
 header a{font-size:3.0rem;line-height:2;color:#ffffff}
 header span{font-size:1.4rem;margin-left:20px;}
 
-nav{padding:8px var(--padding);margin-bottom:10px;background:#373737;margin:0 auto;border-bottom:1px solid #ccc}
+nav{padding:8px var(--padding);margin-bottom:10px;background:#404040;margin:0 auto;border-bottom:1px solid #ccc}
 nav ul{list-style:none;}
 nav ul li{float:left;}
 nav ul:after{clear:both;content:'';display:block;}
