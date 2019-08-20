@@ -25,12 +25,12 @@ def read_path_as_content(path):
     else :
         md_file = path
     with open(md_file,'r',encoding='utf-8') as f:
-        title = f.readline() #标题
-        url = f.readline() #链接
+        title = f.readline().strip().lstrip('#') #标题
+        url = f.readline().strip().lstrip('-') #链接
         f.readline() #关键词
         content = '# ' + title[2:] + '\n'
         content += f.read()
-        content += '\n > 阅读原文《[{title}]({url})》'.format(title=title[2:],url=url[2:])
+        content += '\n > 阅读原文《[{title}]({url})》'.format(title=title,url=url)
     return content
 
 def path_to_html_path(path):
