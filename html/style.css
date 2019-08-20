@@ -64,20 +64,20 @@ pre>code {
   margin: 0;
   padding: 0;
   white-space: pre;
-  color: #333;
+  color: #ffffff;
   border: none;
   background: transparent;
 
 }
 
 pre {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
+  background-color: #404040;
+  border: 1px solid #101010;
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
   padding: 6px 10px;
-  border-radius: 3px;
+  border-radius: 8px;
 }
 
 pre code {
@@ -89,19 +89,19 @@ blockquote{
   background-color:#e0e0e0;
   padding:0.5rem 2rem;
   border-left:.5rem solid #404040;
+  margin:1rem 0
 }
 
 blockquote p{margin:0 0}
 
-/* article .item {border-bottom:1px solid #eee;}
-article .item h2{font-size:2.0rem;line-height:2;}
-article .item p{font-size:1.6rem;line-height:1.5;padding:0px;}
-article .item .description{font-size:1.4rem;line-height:1.5;color:#3f3f3f;padding:0px 10px;}
-article .item .tag{margin-right:20px;}
- */
-/* .footer_index{margin-top:20px;}
-.footer_index a{border:1px solid #eee;background-color:#337ab7;color:#fff;font-size:1.5rem;padding:5px 8px;margin-right:10px;}
- */
+strong{
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
 @media screen and (max-width:640px){
       header a{font-size:1.8rem;}
       article h1 {font-size: 2.1rem;line-height:2;margin:1rem 0}
