@@ -46,7 +46,7 @@ article h3 {font-size: 2.2rem;margin:1.6rem 0px;}
 article h4 {font-size: 2.0rem;}
 article h5 {font-size: 1.8rem;}
 article h6 {font-size: 1.6rem;}
-article p { font-size:1.6rem; line-height:1.8; margin:1.6rem 0px;word-break:break-all;git }
+article p { font-size:1.6rem; line-height:1.8; margin:1.6rem 0px;word-break:break-all;}
 /* article .article_tag{color:#efefef;margin-right:20px;} */
 article ul li{ font-size:1.6rem; line-height:1.8; margin:0 0.5rem;}
 article ul {margin:1rem 0 1rem 2rem;padding-left:2rem;}
@@ -104,3 +104,12 @@ article .item .tag{margin-right:20px;}
 /* .footer_index{margin-top:20px;}
 .footer_index a{border:1px solid #eee;background-color:#337ab7;color:#fff;font-size:1.5rem;padding:5px 8px;margin-right:10px;}
  */
+@media screen and (max-width:640px){
+      header a{font-size:1.8rem;}
+      article h1 {font-size: 2.1rem;line-height:2;margin:1rem 0}
+      article h2 {font-size: 2.0rem;line-height:2;margin:1rem 0}
+      article h3 {font-size: 1.9rem;margin:1.6rem 0px;}
+      article h4 {font-size: 1.8rem;}
+      article h5 {font-size: 1.7rem;}
+      article h6 {font-size: 1.6rem;}
+}
