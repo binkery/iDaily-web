@@ -90,6 +90,16 @@ def write_article_to_file(article,content,path):
 <div id="div_article">
      <article>
      {article[content]}
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+     <ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5264794978178106"
+     data-ad-slot="2761875073"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({{}});
+    </script>
      <P> - EOF - </P>
      <p> 本文链接 <a href="{site[app_link]}{article[link]}"> {site[app_link]}{article[link]}</a>，欢迎转载，转载请注明出处。</p>
     </article>
