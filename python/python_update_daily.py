@@ -111,7 +111,7 @@ def write_article_to_file(article,content,path):
      <p>
         网站更新时间 ：{site[last_modify_time]} ，网站已经运行 ：{site[since_setup]} 天
      </p>
-     <p>CopyRight &copy; <a href="{site[app_link]}/">idaily.binkery.com</a></p>
+     <p>CopyRight &copy; <a href="{site[app_link]}/">idaily.binkery.com</a> | Power By <a href="https://binkery.com/>Binkery</a></p>
 </footer>
 </body>
 </html>
