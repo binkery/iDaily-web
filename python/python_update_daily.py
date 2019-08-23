@@ -83,7 +83,9 @@ def write_article_to_file(article,content,path):
 </header>
 <nav>
     <ul>
-        {site[nav]}
+        <li><a href="https://idaily.binkery.com/">iDaily</a></li>
+        <li><a href="https://idaily.binkery.com/201908/">2019年8月份</a></li>
+        <li><a href="https://idaily.binkery.com/static/">运营报告</a></li>
     </ul>
 </nav>
 
@@ -198,10 +200,10 @@ site['app_link'] = 'https://idaily.binkery.com'
 
 root_path = '../content'
 files = os.listdir(root_path)
-nav = ''
-for topFile in files:
-    article = read_path_as_article(os.path.join(root_path,topFile))
-    nav += '<li><a href="' + site['app_link'] + article['link'] + '">' + article['title'] + '</a></li>\n'
-site['nav'] = nav
+#nav = ''
+#for topFile in files:
+#    article = read_path_as_article(os.path.join(root_path,topFile))
+#    nav += '<li><a href="' + site['app_link'] + article['link'] + '">' + article['title'] + '</a></li>\n'
+#site['nav'] = nav
 #print(nav)
 dispatch_path(root_path)
