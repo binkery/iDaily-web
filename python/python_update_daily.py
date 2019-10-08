@@ -84,8 +84,9 @@ def write_article_to_file(article,content,path):
 <nav>
     <ul>
         <li><a href="https://idaily.binkery.com/">iDaily</a></li>
-        <li><a href="https://idaily.binkery.com/201908/">2019年8月份</a></li>
+        <li><a href="https://idaily.binkery.com/201910/">2019年10月份</a></li>
         <li><a href="https://idaily.binkery.com/2019.09/">2019年9月份</a></li>
+        <li><a href="https://idaily.binkery.com/201908/">2019年8月份</a></li>
         <li><a href="https://idaily.binkery.com/static/">运营报告</a></li>
     </ul>
 </nav>
